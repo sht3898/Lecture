@@ -1,0 +1,18 @@
+	Scanner input=new Scanner(System.in);
+		for(int i=1; i<=50;i++) {
+			if(i%3==0){
+				if((i%3==0)&&(i%5==0)){
+					System.out.println(i+"foo bar");
+				if((i%3==0)&&(i%7==0))
+					System.out.println(i+"foo baz");
+			}System.out.println("foo");}
+			if(i%5==0){
+				if((i%5==0)&&(i%7==0)){
+					System.out.println(i+"bar baz");
+			}System.out.println(i+"bar");
+			if(i%7==0)
+				System.out.println(i+"baz");}
+			else
+				System.out.println(i);
+			input.close();
+}
