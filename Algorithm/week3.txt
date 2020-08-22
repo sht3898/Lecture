@@ -1,0 +1,3 @@
+9.27
+insert, search, delete의 복잡도 시험
+

@@ -1,0 +1,23 @@
+큐를 활용한 응용 프로그램 이해
+
+코딩 컨벤션
+자바) Acecount => aceCount
+파이썬) Acecount => ace_count
+
+파이썬3의 lambda 함수 => 가능하면 사용하지 않는다 (readability 떨어짐)
+
+13초콜릿 게임
+선공한 뒤 4의 배수의 맞춰서 초콜릿을 가져가면 무조건 이김
+
+구글에서 python unittest 읽어보기
+
+큐 
+First In First Out(FIFO) 추상 데이터 타입
+Stack과 함께 매우 많이 사용
+
+큐 인터페이스
+Enqueue
+Dequeue
+
+파이썬은 array가 존재하지 않음
+

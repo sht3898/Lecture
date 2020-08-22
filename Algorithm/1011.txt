@@ -1,0 +1,50 @@
+_swap의 underbar => private
+
+my_sort안에 다른 것을 미리 import하면 my_sort만 import해도 다른 것들을 모두 사용할 수 있다
+
+merge_sort 
+[4 19 1 9 10]
+[4 19] [1 9 10]
+새로운 리스트를 만듦
+새 변수 = [1 4 9 10 19]
+
+나머지 sort는 내부에서 인자를 바꿈, but merge_sort는 인자가 바뀌지 않음.
+그래야 일관성 유지가 됨.
+
+x = [4 12 8 2]
+y.sorted(x)
+y => [2 4 8 12]
+x는 그대로
+target.clear()	=> 공백
+target.extend(result) => 새 변수로 바뀜
+를 활용해서 비운다음 x.extend(y)
+x= [2 4 8 12]
+일관성 유지
+
+
+Quick Sort (Lomuto Version)
+
+[4 19 1 9 10]
+
+quicksort(A, lo ,hi)
+A => list
+lo => index의 처음
+hi => index의 마지막
+
+pivot 기준으로 왼쪽은 다 작은 것, 오른쪽은 큰 것
+다시 pivot 왼쪽과 오른쪽 각각에서 quicksort를 함
+
+
+
+
+Qucik Sort (Hoare Version)
+왼쪽에선 작은 것을 찾고, 오른쪽에서는 큰 것을 찾아서 교환,
+서로 엇갈리면 끝
+
+
+
+
+
+
+
+

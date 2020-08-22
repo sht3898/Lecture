@@ -1,0 +1,31 @@
+def make_change(coin_value_list, coin_change, known_result):
+    min_coins = [0] * (coin_change + 1)
+
+    for cents in range(0, coin_change+1):
+        coin_count = cents
+        new_coin = 1
+        coins = list()
+        #array = list()
+        for coin in coin_value_list:
+            if coin <= cents:
+                coins.append(coin)
+        for coin in coins:
+            if min_coins[cents - coin] + 1 < coin_count:
+            #if len(known_result[cents - coin]) + 1 < coin_count:
+            #if sum(known_result[cents - coin]) + 1 < coin_count:
+                #coin_count = sum(known_result[cents-coin]) + 1
+                new_coin = coin
+                coin_count = min_coins[cents - coin] + 1
+                #known_result[0][cents].append(new_coin)
+                #array.append(new_coin)
+            #array.append(new_coin)
+            #known_result[cents] = array
+            # known_result[cents].append(new_coin)
+            min_coins[cents] = coin_count
+            #known_result[cents] = [new_coin]
+            if min_coins[cents] != 0:
+                known_result[cents] = [new_coin] + known_result[cents - new_coin]
+        #print('cents: ',cents)
+        #print('known_result[cents]: ',known_result[cents])
+        #print('known_result: ',known_result)
+    return min_coins[coin_change]

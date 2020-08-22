@@ -1,0 +1,32 @@
+if __name__	=> 코드 중복 방지하려고
+
+indentation	=> 블록이 닫혀야 실행됨
+
+self		=> 클래스 안에서 함수를 정의할 때(일반 함수에서는 넣지 않음)
+
+설계부터하고 코딩
+
+파이썬은 명시적인 것을 좋아해서 -= 같이 하지 않고 chocolates = cholates -1 과 같이함
+
+파이썬 string 표현법	=> '문자열', "문자열", '''문자열''', """문자열"""
+			=> 3개 다 string, 문자 자료형은 없음
+''', """ 	=> 엔터 활용한 문자열
+
+strip() 문자열 내의 불필요한 공백을 없애줌
+
+x= '10.4'
+int(x)	=> 에러
+int(float(x))와 같이 써야함
+
+flow control	=> if, while, for
+
+x=[10,11]
+score=0
+for node in score:
+   score = score + node
+
+c = {'suit': 'diamonds', 'rank': 'King'}
+if c['rank']=='King':
+   score = score + 10
+
+if elif else:
